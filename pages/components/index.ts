@@ -1,3 +1,4 @@
 import AboutSection from "./About";
+import SkillSection from "./Skill";
 
-export {AboutSection}
+export {AboutSection, SkillSection}

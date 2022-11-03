@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { AboutSection } from "./components";
+import { AboutSection, SkillSection } from "./components";
 import { MainWrapper } from "./layout";
 
 export default function Home() {
@@ -18,10 +18,7 @@ export default function Home() {
       </Head>
       <MainWrapper>
         <AboutSection />
-
-        <div className="section">
-          <h1>Section 2</h1>
-        </div>
+        <SkillSection />
 
         <div className="section">
           <h1>Section 3</h1>

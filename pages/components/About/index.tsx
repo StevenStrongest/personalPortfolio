@@ -1,10 +1,22 @@
 import Image from "next/image";
-import avatar from "../../assets/images/avatar.jpg";
+import aboutBackground from "../../assets/images/about-background.gif";
 import AnimationBackground from "../AnimationBackground";
 import Container from "../Container";
 import Header from "../Header";
 import ScrollButton from "../ScrollButton";
 import AboutWrapper from "./about.styled";
+import Lottie from "react-lottie";
+import * as animationData from "../../assets/lottie/sphere.json";
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
 const AboutSection = () => {
   return (
     <AboutWrapper className="section">
@@ -28,7 +40,7 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="avatar">
-            <Image src={avatar} alt="avatar" />
+            <Lottie options={defaultOptions} height={400} width={400} />
           </div>
         </div>
       </Container>
